@@ -1,0 +1,73 @@
+import java.util.Arrays;
+
+public class task1 {
+    public static void main(String[] args)
+    {
+        int i ,j,min,temp;
+        int a[]={9,8,7,6,5};
+        for(i=0;i<a.length-1;i++){
+            min=i;
+            for(j=i+1;j<a.length;j++){
+                if(a[j]<a[min]){
+                    min=j;
+                    temp=a[i];
+                    a[i]=a[min];
+                    a[min]=temp;
+                }
+            }
+            
+        }
+     System.out.println(Arrays.toString(a));
+    
+    }
+}
+
+
+
+import java.util.Arrays;
+public class task2 {
+public static void main(String[] args)
+    {
+        int i ,j,min;
+        String temp=new String();
+        String a[]={"i","g","e","c","a"};
+        for(i=0;i<a.length-1;i++){
+           min=i;
+           for(j=i+1;j<a.length;j++){
+               if(a[j].charAt(0)<a[min].charAt(0)){
+                  min=j;
+                   temp=a[i];
+                   a[i]=a[min];
+                   a[min]=temp;
+               }
+           }         }
+    
+    System.out.println(Arrays.toString(a)); 
+    
+    }  
+}
+
+
+
+import java.util.Arrays;
+
+
+public class insertion {
+    public static void main(String[] args)
+    {
+        
+        int a[]={-1,9,7,5,4,6};
+        int ptr,k,temp=0;
+        for(k=2;k<a.length;k++){
+             temp=a[k];
+             ptr=k-1;
+             while(temp<a[ptr]){
+                a[ptr+1]=a[ptr];
+                ptr=ptr-1;
+             }
+        a[ptr+1]=temp; 
+        }
+    System.out.println(Arrays.toString(a)); 
+    
+    }
+}

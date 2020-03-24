@@ -1,0 +1,104 @@
+
+import java.util.Arrays;
+
+public class InsertingAnArray {
+
+    public static void main(String[] args) {
+    int[] my_array={25,14,23,51,25,73};
+    int Index_position=2;
+    int newValue=5;
+    System.out.println("Original Array"+Arrays.toString(my_array));
+    for(int i=my_array.length-1;i<Index_position;i--)
+    {
+        my_array[i]=my_array[i-1];
+        
+    }
+    my_array[Index_position]=newValue;
+    System.out.println("New Array: "+Arrays.toString(my_array));
+    }
+    
+}
+
+
+import java.util.Arrays;
+
+public class DeletingAnElement {
+
+    public static void main(String[] args) {
+    int[] my_array={25,16,23,15,77};
+    System.out.println("Original Array"+Arrays.toString(my_array));
+    int removeIndex=1;
+    for(int i=removeIndex;i<my_array.length-1;i++)
+        my_array[i]=my_array[i+1];
+    
+    System.out.println("After Deleting second element"+Arrays.toString(my_array));
+    }
+    }
+
+
+public class triv {
+    public static void main(String args[]){
+       int a[]=new int [5];
+       int i,sum=0;
+       Scanner inp=new Scanner(System.in);
+       for(i=0;i<5;i++){
+       a[i]=inp.nextInt();
+       }
+       for(i=0;i<5;i++){
+          sum=sum+a[i]; 
+           
+       }   
+        System.out.println(""+sum);
+    }
+}
+
+
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class array {
+    public static void main(String[] args) {
+        ArrayList a1=new ArrayList();
+        ArrayList a2=new ArrayList();
+        Scanner inp=new Scanner(System.in);
+        int a[]=new int[5];
+        int i,b;
+        a1.add("good");
+        a1.add("Student");
+        a2.add("hello");
+        System.out.println("Array size"+a1.size()); 
+        System.out.println("Array size"+a1.size()); 
+        System.out.println("Array size"+a1.addAll(a2)); 
+    }
+}
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class arr {
+    public static void main(String[] args) {
+        int i;
+        int a[]={1,2,3,4,5};
+        int b[]={1,2,3,4,5};
+        int c[]=new int [10];
+        Scanner inp=new Scanner(System.in);
+        
+       System.out.println("1st Array: "+Arrays.toString(a));          
+       System.out.println("2st Array: "+Arrays.toString(b));            
+       
+       System.out.println("After merge: ");          
+       for(i=0;i<5;i++){
+          c[i]=a[i];
+       }
+       for(i=0;i<5;i++){
+           c[i+1]=b[i];      
+       }
+    
+     System.out.println("1st Array: "+Arrays.toString(c));          
+    
+    }
+}
